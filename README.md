@@ -47,7 +47,7 @@
 
 ## Tutorial main content
 
-### Bootstrap based
+### Bootstrap base
 
 1. Bootstrap 5 Containers
 2. Bootstrap 5 Grid System
@@ -58,3 +58,19 @@
 7. Bootstrap 5 Alerts
 8. Bootstrap 5 Buttons
 9. Bootstrap 5 Button Groups
+10. Bootstrap 5 Badges
+11. Bootstrap 5 Spinners
+12. Bootstrap 5 Pagination
+13. Bootstrap 5 List Groups
+14. Bootstrap 5 Cards
+15. Bootstrap 5 Dropdowns
+16. Bootstrap 5 Collapse
+17. Bootstrap 5 Navs
+18. Bootstrap 5 Navbars
+19. Bootstrap 5 Carousel
+20. Bootstrap 5 Modal
+21. Bootstrap 5 Tooltip
+22. Bootstrap 5 Popover
+23. Bootstrap 5 Toasts
+24. Bootstrap 5 Scrollspy
+25. Bootstrap 5 Offcanvas
