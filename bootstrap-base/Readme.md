@@ -1233,3 +1233,248 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 - **Offcanvas Position**
   - Sử dụng .offcanvas-start | end | top | bottom để định vị các offcanvas sang trái, phải, trên hoặc dưới
   - VD: `<div class="offcanvas offcanvas-top" id="demo">`
+
+## Bootstrap 5 Utilities
+
+- **Borders**
+
+  - sử dụng class `.border` để tạo viền cho phần tử
+  - VD:
+
+  ```htm
+  <span class="border"></span>
+  <span class="border border-0"></span>
+  <span class="border border-top-0"></span>
+  <span class="border border-end-0"></span>
+  <span class="border border-bottom-0"></span>
+  <span class="border border-start-0"></span>
+  <span class="border-top"></span>
+  <span class="border-end"></span>
+  <span class="border-bottom"></span>
+  <span class="border-start"></span>
+  ```
+
+  - `.border-0` là không viền
+  - `.border-top-0` là không có viền bên trên
+  - `.border-bottom-0` là không có viền bên dưới
+  - `.border-start-0` là không có viền bên trái
+  - `.border-end-0` là không có viền bên phải
+  - `.border-top` là chỉ có viền bên trên
+  - `.border-bottom` là chỉ có viền bên dưới
+  - `.border-start` là chỉ có viền bên trái
+  - `.border-end` là chỉ có viền bên phải
+  - Border Width sử dụng class `.border-1` đến `.border-5`
+  - Border Color sử dụng class `.border-color` (color: primary, secondary, success, ...)
+
+- **Border Radius**
+
+  - để Border Radius dùng class `.rounded`
+
+  ```htm
+  <span class="rounded"></span>
+  <span class="rounded-top"></span>
+  <span class="rounded-end"></span>
+  <span class="rounded-bottom"></span>
+  <span class="rounded-start"></span>
+  <span class="rounded-circle"></span>
+  <span class="rounded-pill" style="width:130px"></span>
+  <span class="rounded-0"></span>
+  <span class="rounded-1"></span>
+  <span class="rounded-2"></span>
+  <span class="rounded-3"></span>
+  ```
+
+- _Float and Clearfix_
+
+  - Làm nổi một phần tử ở bên phải với class `.float-end` hoặc ở bên trái với `.float-start`, và xóa nổi với class `.clearfix`
+
+  ```htm
+  <div class="clearfix">
+    <span class="float-start">Float left</span>
+    <span class="float-end">Float right</span>
+  </div>
+  ```
+
+  - Làm nổi một phần tử sang trái hoặc sang phải tùy thuộc vào chiều rộng màn hình, với các class float đáp ứng (`.float-*-start | end` trong đó \* là sm (>= 576px), md (>= 768px), lg (>= 992px), xl (>= 1200px) hoặc xxl (>= 1400px)):
+
+- **Center Align**
+
+  - căn giữa phần tử với class `.mx-auto`
+
+- \*\*Width/Height
+
+  - Đặt chiều rộng của một phần tử với các class `.w-*` (`.w-25`, `.w-50`, `.w-75`, `.w-100`, `.mw-auto`, `.mw-100`)
+  - Đặt chiều cao của một phần tử với các class `.h-*` (`.h-25`, `.h-50`, `.h-75`, `.h-100`, `.mh-auto`, `.mh-100`):
+
+- **Spacing**
+
+  - Bootstrap 5 có một loạt các class tiện ích margin và padding đáp ứng. Chúng hoạt động cho tất cả các điểm ngắt: xs (<= 576px), sm (> = 576px), md (> = 768px), lg (> = 992px), xl (> = 1200px) hoặc xxl (> = 1400px))
+  - Các class được sử dụng ở định dạng: `{property}{side}-{size}` cho xs và `{property}{side}-{breakpoint}-{size}`cho sm, md, lg, xl và xxl.
+  - property
+    - m : margin
+    - p : padding
+  - sides
+    - t : top
+    - b : bottom
+    - s : start
+    - e : end
+    - x : start & end
+    - y : top & bottom
+    - không có : áp dụng cho tất cả
+  - size
+    - 0 : 0 rem
+    - 1 : 0.25 rem
+    - 2 : 0.5 rem
+    - 3 : 1 rem
+    - 4 : 1.5 rem
+    - 5 : 3 rem
+    - auto : set margin auto
+
+- **Shadows**
+
+  - sử dụng class `.shadows` để thêm shadows mặc định
+  - sử dụng class `.shadows-none` để không có shadows
+  - sử dụng class `.shadows-sm` để thêm shadows nhỏ
+  - sử dụng class `.shadows- lg` để thêm shadows lớn
+
+- **Vertical Align**
+
+  - Sử dụng các class `.align-*` để thay đổi sự căn chỉnh của các phần tử (chỉ hoạt động trên các phần tử inline, inline-block, inline-table và table cell)
+  - VD:
+
+  ```htm
+  <span class="align-baseline">baseline</span>
+  <span class="align-top">top</span>
+  <span class="align-middle">middle</span>
+  <span class="align-bottom">bottom</span>
+  <span class="align-text-top">text-top</span>
+  <span class="align-text-bottom">text-bottom</span>
+  ```
+
+- **Aspect Ratio**
+
+  - Tạo video hoặc trình chiếu đáp ứng dựa trên chiều rộng của trang gốc.
+  - Thêm class `.ratio` cùng với tỷ lệ khung hình mà bạn chọn `.ratio-*` vào phần tử mẹ và thêm tệp nhúng (`video` hoặc `iframe`) vào bên trong
+  - VD:
+
+  ```htm
+  <!-- Aspect ratio 1:1 -->
+  <div class="ratio ratio-1x1">
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  </div>
+
+  <!-- Aspect ratio 4:3 -->
+  <div class="ratio ratio-4x3">
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  </div>
+
+  <!-- Aspect ratio 16:9 -->
+  <div class="ratio ratio-16x9">
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  </div>
+
+  <!-- Aspect ratio 21:9 -->
+  <div class="ratio ratio-21x9">
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  </div>
+  ```
+
+- **Visibility**
+
+  - Sử dụng class `.visible` hoặc `.invisible` để kiểm soát khả năng hiển thị của các phần tử. Lưu ý: Các class này không thay đổi giá trị `display` của CSS. Chúng chỉ thêm `visibility:visible` hoặc `visibility:hidden`
+
+- **Close icon**
+
+  - sử dụng class `.btn-close` để tạo kiểu cho biểu tượng close. Điều này thường được sử dụng cho các alert và modal.
+
+- **Screenreaders**
+  - Sử dụng class `.visually-hidden` để ẩn một phần tử trên tất cả các thiết bị, ngoại trừ trình đọc màn hình
+
+## Bootstrap 5 Flex
+
+- Sự khác biệt lớn nhất giữa Bootstrap 3 và Bootstrap 4 & 5 là Bootstrap 5 hiện sử dụng flex-box, thay vì float để xử lý bố cục
+- Để tạo một vùng chứa flex-box và biến phần tử  con thành các mục flex, hãy sử dụng class `.d-flex`, để tạo vùng chứa flex-box inline sử dụng class `.d-inline-flex`
+- **Horizontal/Vertical Direction**
+  - Sử dụng `.flex-row` để hiển thị các mục linh hoạt theo chiều ngang (cạnh nhau). Đây là mặc định.
+  - Mẹo: Sử dụng `.flex-row-reverse` để căn phải theo hướng ngang
+  - Sử dụng `.flex-column` để hiển thị các mục uốn theo chiều dọc (chồng lên nhau) hoặc `.flex-column-reverse` để đảo ngược hướng dọc
+- **Justify Content**
+  - Sử dụng các class `.justify-content-*` để thay đổi căn chỉnh của các mục linh hoạt. * là `start` (mặc định), end, `center`, `between` or `around`.
+
+- **Fill / Equal Widths**
+  - Sử dụng `.flex-fill` trên các mục flex để buộc chúng thành các chiều rộng bằng nhau
+
+- **Grow**
+  - Sử dụng `.flex-grow-1` trên một mục linh hoạt để chiếm phần còn lại của không gian.
+  - mẹo: sử dụng `.flex-shrink-1` trên 1 mục để nó co lại nếu cần.
+
+- **Order**
+  - Thay đổi thứ tự trực quan của (các) mục linh hoạt cụ thể với các các class `.order-*`. * là từ 0 đến 5, trong đó số thấp nhất có mức ưu tiên cao nhất (order-1 được hiển thị trước order-2, v.v.)
+
+- **Auto Margins**
+  - Dễ dàng thêm lề tự động để linh hoạt các mục bằng `.ms-auto` (đẩy các mục sang phải) hoặc bằng cách sử dụng `.me-auto` (đẩy các mục sang trái)
+
+- **Wrap**
+  - Kiểm soát các item có xuốNg dòng không bằng cách `.flex-nowrap` (mặc định), `.flex-wrap` hoặc `.flex-wrap-reverse`.
+
+- **Align Content**
+  - Kiểm soát việc căn chỉnh theo chiều dọc của tập hợp các mục flex bằng các class `.align-content-*`. * là `.align-content-start` (mặc định), `.align-content-end`, `.align-content-center`, `.align-content-between`, `.align-content-around` và `.align-content-stretch`.
+  - Lưu ý: Các lớp này không có tác dụng đối với các hàng đơn lẻ của mục linh hoạt.
+
+- **Align Items**
+  - Kiểm soát căn chỉnh theo chiều dọc của các hàng linh hoạt đơn lẻ bằng các class `.align-items-*`. 
+  - VD: `.align-items-start`, `.align-items-end`, `.align-items-center`, `.align-items-baseline` và `.align-items-stretch` (mặc định).
+
+- **Align Self**
+  - Kiểm soát căn chỉnh theo chiều dọc của một mục linh hoạt được chỉ định bằng các class `.align-self-*`. 
+    - VD: `.align-self-start`, `.align-self-end`, `.align-self-center`, .align-self-baseline và `.align-self-stretch` (mặc định).
+
+- **Responsive Flex Classes**
+  - Tất cả các class flex đi kèm với các lớp đáp ứng bổ sung, giúp dễ dàng thiết lập một lớp flex cụ thể trên một kích thước màn hình cụ thể.
+  - Biểu tượng * có thể được thay thế bằng sm, md, lg, xl hoặc xxl, đại diện cho màn hình nhỏ, vừa, lớn, xlarge và xxlarge.
+  - Flex Container: 
+    - `.d-*-flex`
+    - `.d-*-inline-flex`
+  - Direction:
+    - `.flex-*-row`
+    - `.flex-*-row-reverse`
+    - `.flex-*-column`
+    - `.flex-*-column-reverse	`
+  - Justified Content
+    - `.justify-content-*-start`
+    - `.justify-content-*-end`
+    - `.justify-content-*-center`
+    - `.justify-content-*-between`
+    - `.justify-content-*-around`
+  - Fill / Equal Width
+    - `.flex-*-fill`
+  - Grow
+    - `.flex-*-grow-0`
+    - `.flex-*-grow-1`
+  - Shrink
+    - `.flex-*-shrink-0`
+    - `.flex-*-shrink-1`
+  - Order
+    - `.order-*-0-12`
+  - Wrap
+    - `.flex-*-nowrap`
+    - `.flex-*-wrap`
+    - `.flex-*-wrap-reverse`
+  - Align Content
+    - `.align-content-*-start`
+    - `.align-content-*-end`
+    - `.align-content-*-center`
+    - `.align-content-*-around`
+    - `.align-content-*-stretch`
+  - Align Items
+    - `.align-items-*-start`
+    - `.align-items-*-end`
+    - `.align-items-*-center`
+    - `.align-items-*-baseline`
+    - `.align-items-*-stretch`
+  - Align Self
+    - `.align-self-*-start`
+    - `.align-self-*-end`
+    - `.align-self-*-center`
+    - `.align-self-*-baseline`
+    - `.align-self-*-stretch`

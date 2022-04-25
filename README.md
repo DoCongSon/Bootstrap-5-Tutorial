@@ -74,3 +74,15 @@
 23. Bootstrap 5 Toasts
 24. Bootstrap 5 Scrollspy
 25. Bootstrap 5 Offcanvas
+26. Bootstrap 5 Utilities
+27. Bootstrap 5 Flex
+
+### Bootstrap Forms
+
+1. Bootstrap 5 Forms
+2. Bootstrap 5 Select
+3. Bootstrap 5 Checkboxes and Radio buttons
+4. Bootstrap 5 Range
+5. Bootstrap 5 Input Groups
+6. Bootstrap 5 Form Floating Labels
+7. Bootstrap 5 Form Validation
